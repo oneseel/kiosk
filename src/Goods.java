@@ -1,7 +1,5 @@
 public class Goods extends Menu {
-    String goodsName; // 상품 이름
-    String menuDescription; // 상품 설명
-    double goodsPrice; // 상품 가격
+    private double goodsPrice; // 상품 가격
 
     public Goods(String menuName, String menuDescription, double goodsPrice) {
         super(menuName, menuDescription);

@@ -10,7 +10,6 @@ public class Main {
 
         int choice; // 메뉴 선택
         int goodsChoice; // 상품 선택
-        int orderChoice; // 주문 확인
 
         menuMap.put(1, new Menu("Chicken", "치킨입니다."));
         menuMap.put(2, new Menu("Hamburger", "햄버거입니다."));
@@ -34,7 +33,7 @@ public class Main {
             System.out.println();
 
             choice = sc.nextInt();
-
+            System.out.println();
 
             switch (choice) {
                 // <1번 치킨 상품>
@@ -56,151 +55,8 @@ public class Main {
                     goodsChoice = sc.nextInt();
                     System.out.println();
 
-                    switch (goodsChoice) {
-                        // <1번 치킨 장바구니 추가>
-                        case 1:
-                            System.out.println(goodsMap.get(1).getMenuName() + " \t|\t "
-                                    + goodsMap.get(1).getGoodsPrice() + " \t|\t "
-                                    + goodsMap.get(1).getMenuDescription());
-
-                            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
-                            System.out.println("1. 확인 \t\t 2. 취소");
-
-                            orderChoice = sc.nextInt();
-                            System.out.println();
-
-                            // <1번 치킨 장바구니 추가 확인>
-                            switch (orderChoice) {
-                                case 1:
-                                    System.out.println(goodsMap.get(1).getMenuName() + "이 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2:
-                                    System.out.println("취소되었습니다. 처음으로 돌아갑니다.");
-                                    System.out.println();
-                                    break;
-                                default:
-                                    System.out.println("잘못된 입력입니다. 처음으로 돌아갑니다");
-                                    System.out.println();
-                            }
-                            break;
-
-                        // <2번 치킨 장바구니 추가>
-                        case 2:
-                            System.out.println(goodsMap.get(2).getMenuName() + " \t|\t "
-                                    + goodsMap.get(2).getGoodsPrice() + " \t|\t "
-                                    + goodsMap.get(2).getMenuDescription());
-
-                            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
-                            System.out.println("1. 확인 \t\t 2. 취소");
-
-                            orderChoice = sc.nextInt();
-                            System.out.println();
-
-                            // <2번 치킨 장바구니 추가 확인>
-                            switch (orderChoice) {
-                                case 1:
-                                    System.out.println(goodsMap.get(2).getMenuName() + "이 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2:
-                                    System.out.println("취소되었습니다. 처음으로 돌아갑니다.");
-                                    System.out.println();
-                                    break;
-                                default:
-                                    System.out.println("잘못된 입력입니다. 처음으로 돌아갑니다");
-                                    System.out.println();
-                            }
-                            break;
-
-                        // <3번 치킨 장바구니 추가>
-                        case 3:
-                            System.out.println(goodsMap.get(3).getMenuName() + " \t|\t "
-                                    + goodsMap.get(3).getGoodsPrice() + " \t|\t "
-                                    + goodsMap.get(3).getMenuDescription());
-
-                            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
-                            System.out.println("1. 확인 \t\t 2. 취소");
-
-                            orderChoice = sc.nextInt();
-                            System.out.println();
-
-                            // <3번 치킨 장바구니 추가 확인>
-                            switch (orderChoice) {
-                                case 1:
-                                    System.out.println(goodsMap.get(3).getMenuName() + "이 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2:
-                                    System.out.println("취소되었습니다. 처음으로 돌아갑니다.");
-                                    System.out.println();
-                                    break;
-                                default:
-                                    System.out.println("잘못된 입력입니다. 처음으로 돌아갑니다");
-                                    System.out.println();
-                            }
-                            break;
-
-                        // <4번 치킨 장바구니 추가>
-                        case 4:
-                            System.out.println(goodsMap.get(4).getMenuName() + " \t|\t "
-                                    + goodsMap.get(4).getGoodsPrice() + " \t|\t "
-                                    + goodsMap.get(4).getMenuDescription());
-
-                            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
-                            System.out.println("1. 확인 \t\t 2. 취소");
-
-                            orderChoice = sc.nextInt();
-                            System.out.println();
-
-                            // <4번 치킨 장바구니 추가 확인>
-                            switch (orderChoice) {
-                                case 1:
-                                    System.out.println(goodsMap.get(4).getMenuName() + "이 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2:
-                                    System.out.println("취소되었습니다. 처음으로 돌아갑니다.");
-                                    System.out.println();
-                                    break;
-                                default:
-                                    System.out.println("잘못된 입력입니다. 처음으로 돌아갑니다");
-                                    System.out.println();
-                            }
-                            break;
-
-                        // <5번 치킨 장바구니 추가>
-                        case 5:
-                            System.out.println(goodsMap.get(5).getMenuName() + " \t|\t "
-                                    + goodsMap.get(5).getGoodsPrice() + " \t|\t "
-                                    + goodsMap.get(5).getMenuDescription());
-
-                            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
-                            System.out.println("1. 확인 \t\t 2. 취소");
-
-                            orderChoice = sc.nextInt();
-                            System.out.println();
-
-                            // <5번 치킨 장바구니 추가 확인>
-                            switch (orderChoice) {
-                                case 1:
-                                    System.out.println(goodsMap.get(5).getMenuName() + "이 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2:
-                                    System.out.println("취소되었습니다. 처음으로 돌아갑니다.");
-                                    System.out.println();
-                                    break;
-                                default:
-                                    System.out.println("잘못된 입력입니다. 처음으로 돌아갑니다");
-                                    System.out.println();
-                            }
-                            break;
-
-                        default:
-                            System.out.println("잘못된 입력입니다. 처음으로 돌아갑니다");
-                            System.out.println();
-                    }
+                    goodsChoiceMethod(sc, goodsMap, goodsChoice);
+                    break;
 
                     // <2번 버거 상품>
                 case 2:
@@ -221,151 +77,8 @@ public class Main {
                     goodsChoice = sc.nextInt();
                     System.out.println();
 
-                    switch (goodsChoice) {
-                        // <1번 버거 장바구니 추가>
-                        case 1:
-                            System.out.println(goodsMap.get(1).getMenuName() + " \t|\t "
-                                    + goodsMap.get(1).getGoodsPrice() + " \t|\t "
-                                    + goodsMap.get(1).getMenuDescription());
-
-                            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
-                            System.out.println("1. 확인 \t\t 2. 취소");
-
-                            orderChoice = sc.nextInt();
-                            System.out.println();
-
-                            // <1번 버거 장바구니 추가 확인>
-                            switch (orderChoice) {
-                                case 1:
-                                    System.out.println(goodsMap.get(1).getMenuName() + "이 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2:
-                                    System.out.println("취소되었습니다. 처음으로 돌아갑니다.");
-                                    System.out.println();
-                                    break;
-                                default:
-                                    System.out.println("잘못된 입력입니다. 처음으로 돌아갑니다");
-                                    System.out.println();
-                            }
-                            break;
-
-                        // <2번 버거 장바구니 추가>
-                        case 2:
-                            System.out.println(goodsMap.get(2).getMenuName() + " \t|\t "
-                                    + goodsMap.get(2).getGoodsPrice() + " \t|\t "
-                                    + goodsMap.get(2).getMenuDescription());
-
-                            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
-                            System.out.println("1. 확인 \t\t 2. 취소");
-
-                            orderChoice = sc.nextInt();
-                            System.out.println();
-
-                            // <2번 버거 장바구니 추가 확인>
-                            switch (orderChoice) {
-                                case 1:
-                                    System.out.println(goodsMap.get(2).getMenuName() + "이 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2:
-                                    System.out.println("취소되었습니다. 처음으로 돌아갑니다.");
-                                    System.out.println();
-                                    break;
-                                default:
-                                    System.out.println("잘못된 입력입니다. 처음으로 돌아갑니다");
-                                    System.out.println();
-                            }
-                            break;
-
-                        // <3번 버거 장바구니 추가>
-                        case 3:
-                            System.out.println(goodsMap.get(3).getMenuName() + " \t|\t "
-                                    + goodsMap.get(3).getGoodsPrice() + " \t|\t "
-                                    + goodsMap.get(3).getMenuDescription());
-
-                            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
-                            System.out.println("1. 확인 \t\t 2. 취소");
-
-                            orderChoice = sc.nextInt();
-                            System.out.println();
-
-                            // <3번 버거 장바구니 추가 확인>
-                            switch (orderChoice) {
-                                case 1:
-                                    System.out.println(goodsMap.get(3).getMenuName() + "이 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2:
-                                    System.out.println("취소되었습니다. 처음으로 돌아갑니다.");
-                                    System.out.println();
-                                    break;
-                                default:
-                                    System.out.println("잘못된 입력입니다. 처음으로 돌아갑니다");
-                                    System.out.println();
-                            }
-                            break;
-
-                        // <4번 버거 장바구니 추가>
-                        case 4:
-                            System.out.println(goodsMap.get(4).getMenuName() + " \t|\t "
-                                    + goodsMap.get(4).getGoodsPrice() + " \t|\t "
-                                    + goodsMap.get(4).getMenuDescription());
-
-                            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
-                            System.out.println("1. 확인 \t\t 2. 취소");
-
-                            orderChoice = sc.nextInt();
-                            System.out.println();
-
-                            // <4번 버거 장바구니 추가 확인>
-                            switch (orderChoice) {
-                                case 1:
-                                    System.out.println(goodsMap.get(4).getMenuName() + "이 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2:
-                                    System.out.println("취소되었습니다. 처음으로 돌아갑니다.");
-                                    System.out.println();
-                                    break;
-                                default:
-                                    System.out.println("잘못된 입력입니다. 처음으로 돌아갑니다");
-                                    System.out.println();
-                            }
-                            break;
-
-                        // <5번 버거 장바구니 추가>
-                        case 5:
-                            System.out.println(goodsMap.get(5).getMenuName() + " \t|\t "
-                                    + goodsMap.get(5).getGoodsPrice() + " \t|\t "
-                                    + goodsMap.get(5).getMenuDescription());
-
-                            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
-                            System.out.println("1. 확인 \t\t 2. 취소");
-
-                            orderChoice = sc.nextInt();
-                            System.out.println();
-
-                            // <5번 버거 장바구니 추가 확인>
-                            switch (orderChoice) {
-                                case 1:
-                                    System.out.println(goodsMap.get(5).getMenuName() + "이 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2:
-                                    System.out.println("취소되었습니다. 처음으로 돌아갑니다.");
-                                    System.out.println();
-                                    break;
-                                default:
-                                    System.out.println("잘못된 입력입니다. 처음으로 돌아갑니다");
-                                    System.out.println();
-                            }
-                            break;
-
-                        default:
-                            System.out.println("잘못된 입력입니다. 처음으로 돌아갑니다");
-                            System.out.println();
-                    }
+                    goodsChoiceMethod(sc, goodsMap, goodsChoice);
+                    break;
 
                     // <3번 사이드 상품>
                 case 3:
@@ -386,151 +99,8 @@ public class Main {
                     goodsChoice = sc.nextInt();
                     System.out.println();
 
-                    switch (goodsChoice) {
-                        // <1번 사이드 장바구니 추가>
-                        case 1:
-                            System.out.println(goodsMap.get(1).getMenuName() + " \t|\t "
-                                    + goodsMap.get(1).getGoodsPrice() + " \t|\t "
-                                    + goodsMap.get(1).getMenuDescription());
-
-                            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
-                            System.out.println("1. 확인 \t\t 2. 취소");
-
-                            orderChoice = sc.nextInt();
-                            System.out.println();
-
-                            // <1번 사이드 장바구니 추가 확인>
-                            switch (orderChoice) {
-                                case 1:
-                                    System.out.println(goodsMap.get(1).getMenuName() + "이 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2:
-                                    System.out.println("취소되었습니다. 처음으로 돌아갑니다.");
-                                    System.out.println();
-                                    break;
-                                default:
-                                    System.out.println("잘못된 입력입니다. 처음으로 돌아갑니다");
-                                    System.out.println();
-                            }
-                            break;
-
-                        // <2번 사이드 장바구니 추가>
-                        case 2:
-                            System.out.println(goodsMap.get(2).getMenuName() + " \t|\t "
-                                    + goodsMap.get(2).getGoodsPrice() + " \t|\t "
-                                    + goodsMap.get(2).getMenuDescription());
-
-                            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
-                            System.out.println("1. 확인 \t\t 2. 취소");
-
-                            orderChoice = sc.nextInt();
-                            System.out.println();
-
-                            // <2번 사이드 장바구니 추가 확인>
-                            switch (orderChoice) {
-                                case 1:
-                                    System.out.println(goodsMap.get(2).getMenuName() + "이 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2:
-                                    System.out.println("취소되었습니다. 처음으로 돌아갑니다.");
-                                    System.out.println();
-                                    break;
-                                default:
-                                    System.out.println("잘못된 입력입니다. 처음으로 돌아갑니다");
-                                    System.out.println();
-                            }
-                            break;
-
-                        // <3번 사이드 장바구니 추가>
-                        case 3:
-                            System.out.println(goodsMap.get(3).getMenuName() + " \t|\t "
-                                    + goodsMap.get(3).getGoodsPrice() + " \t|\t "
-                                    + goodsMap.get(3).getMenuDescription());
-
-                            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
-                            System.out.println("1. 확인 \t\t 2. 취소");
-
-                            orderChoice = sc.nextInt();
-                            System.out.println();
-
-                            // <3번 사이드 장바구니 추가 확인>
-                            switch (orderChoice) {
-                                case 1:
-                                    System.out.println(goodsMap.get(3).getMenuName() + "이 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2:
-                                    System.out.println("취소되었습니다. 처음으로 돌아갑니다.");
-                                    System.out.println();
-                                    break;
-                                default:
-                                    System.out.println("잘못된 입력입니다. 처음으로 돌아갑니다");
-                                    System.out.println();
-                            }
-                            break;
-
-                        // <4번 사이드 장바구니 추가>
-                        case 4:
-                            System.out.println(goodsMap.get(4).getMenuName() + " \t|\t "
-                                    + goodsMap.get(4).getGoodsPrice() + " \t|\t "
-                                    + goodsMap.get(4).getMenuDescription());
-
-                            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
-                            System.out.println("1. 확인 \t\t 2. 취소");
-
-                            orderChoice = sc.nextInt();
-                            System.out.println();
-
-                            // <4번 사이드 장바구니 추가 확인>
-                            switch (orderChoice) {
-                                case 1:
-                                    System.out.println(goodsMap.get(4).getMenuName() + "이 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2:
-                                    System.out.println("취소되었습니다. 처음으로 돌아갑니다.");
-                                    System.out.println();
-                                    break;
-                                default:
-                                    System.out.println("잘못된 입력입니다. 처음으로 돌아갑니다");
-                                    System.out.println();
-                            }
-                            break;
-
-                        // <5번 사이드 장바구니 추가>
-                        case 5:
-                            System.out.println(goodsMap.get(5).getMenuName() + " \t|\t "
-                                    + goodsMap.get(5).getGoodsPrice() + " \t|\t "
-                                    + goodsMap.get(5).getMenuDescription());
-
-                            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
-                            System.out.println("1. 확인 \t\t 2. 취소");
-
-                            orderChoice = sc.nextInt();
-                            System.out.println();
-
-                            // <5번 사이드 장바구니 추가 확인>
-                            switch (orderChoice) {
-                                case 1:
-                                    System.out.println(goodsMap.get(5).getMenuName() + "이 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2:
-                                    System.out.println("취소되었습니다. 처음으로 돌아갑니다.");
-                                    System.out.println();
-                                    break;
-                                default:
-                                    System.out.println("잘못된 입력입니다. 처음으로 돌아갑니다");
-                                    System.out.println();
-                            }
-                            break;
-
-                        default:
-                            System.out.println("잘못된 입력입니다. 처음으로 돌아갑니다");
-                            System.out.println();
-                    }
+                    goodsChoiceMethod(sc, goodsMap, goodsChoice);
+                    break;
 
                     // <4번 음료 상품>
                 case 4:
@@ -551,152 +121,50 @@ public class Main {
                     goodsChoice = sc.nextInt();
                     System.out.println();
 
-                    switch (goodsChoice) {
-                        // <1번 음료 장바구니 추가>
-                        case 1:
-                            System.out.println(goodsMap.get(1).getMenuName() + " \t|\t "
-                                    + goodsMap.get(1).getGoodsPrice() + " \t|\t "
-                                    + goodsMap.get(1).getMenuDescription());
-
-                            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
-                            System.out.println("1. 확인 \t\t 2. 취소");
-
-                            orderChoice = sc.nextInt();
-                            System.out.println();
-
-                            // <1번 음료 장바구니 추가 확인>
-                            switch (orderChoice) {
-                                case 1:
-                                    System.out.println(goodsMap.get(1).getMenuName() + "이 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2:
-                                    System.out.println("취소되었습니다. 처음으로 돌아갑니다.");
-                                    System.out.println();
-                                    break;
-                                default:
-                                    System.out.println("잘못된 입력입니다. 처음으로 돌아갑니다");
-                                    System.out.println();
-                            }
-                            break;
-
-                        // <2번 음료 장바구니 추가>
-                        case 2:
-                            System.out.println(goodsMap.get(2).getMenuName() + " \t|\t "
-                                    + goodsMap.get(2).getGoodsPrice() + " \t|\t "
-                                    + goodsMap.get(2).getMenuDescription());
-
-                            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
-                            System.out.println("1. 확인 \t\t 2. 취소");
-
-                            orderChoice = sc.nextInt();
-                            System.out.println();
-
-                            // <2번 음료 장바구니 추가 확인>
-                            switch (orderChoice) {
-                                case 1:
-                                    System.out.println(goodsMap.get(2).getMenuName() + "이 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2:
-                                    System.out.println("취소되었습니다. 처음으로 돌아갑니다.");
-                                    System.out.println();
-                                    break;
-                                default:
-                                    System.out.println("잘못된 입력입니다. 처음으로 돌아갑니다");
-                                    System.out.println();
-                            }
-                            break;
-
-                        // <3번 음료 장바구니 추가>
-                        case 3:
-                            System.out.println(goodsMap.get(3).getMenuName() + " \t|\t "
-                                    + goodsMap.get(3).getGoodsPrice() + " \t|\t "
-                                    + goodsMap.get(3).getMenuDescription());
-
-                            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
-                            System.out.println("1. 확인 \t\t 2. 취소");
-
-                            orderChoice = sc.nextInt();
-                            System.out.println();
-
-                            // <3번 음료 장바구니 추가 확인>
-                            switch (orderChoice) {
-                                case 1:
-                                    System.out.println(goodsMap.get(3).getMenuName() + "이 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2:
-                                    System.out.println("취소되었습니다. 처음으로 돌아갑니다.");
-                                    System.out.println();
-                                    break;
-                                default:
-                                    System.out.println("잘못된 입력입니다. 처음으로 돌아갑니다");
-                                    System.out.println();
-                            }
-                            break;
-
-                        // <4번 음료 장바구니 추가>
-                        case 4:
-                            System.out.println(goodsMap.get(4).getMenuName() + " \t|\t "
-                                    + goodsMap.get(4).getGoodsPrice() + " \t|\t "
-                                    + goodsMap.get(4).getMenuDescription());
-
-                            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
-                            System.out.println("1. 확인 \t\t 2. 취소");
-
-                            orderChoice = sc.nextInt();
-                            System.out.println();
-
-                            // <4번 음료 장바구니 추가 확인>
-                            switch (orderChoice) {
-                                case 1:
-                                    System.out.println(goodsMap.get(4).getMenuName() + "이 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2:
-                                    System.out.println("취소되었습니다. 처음으로 돌아갑니다.");
-                                    System.out.println();
-                                    break;
-                                default:
-                                    System.out.println("잘못된 입력입니다. 처음으로 돌아갑니다");
-                                    System.out.println();
-                            }
-                            break;
-
-                        // <5번 음료 장바구니 추가>
-                        case 5:
-                            System.out.println(goodsMap.get(5).getMenuName() + " \t|\t "
-                                    + goodsMap.get(5).getGoodsPrice() + " \t|\t "
-                                    + goodsMap.get(5).getMenuDescription());
-
-                            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
-                            System.out.println("1. 확인 \t\t 2. 취소");
-
-                            orderChoice = sc.nextInt();
-                            System.out.println();
-
-                            // <5번 음료 장바구니 추가 확인>
-                            switch (orderChoice) {
-                                case 1:
-                                    System.out.println(goodsMap.get(5).getMenuName() + "이 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2:
-                                    System.out.println("취소되었습니다. 처음으로 돌아갑니다.");
-                                    System.out.println();
-                                    break;
-                                default:
-                                    System.out.println("잘못된 입력입니다. 처음으로 돌아갑니다");
-                                    System.out.println();
-                            }
-                            break;
-
-                        default:
-                            System.out.println("잘못된 입력입니다. 처음으로 돌아갑니다");
-                            System.out.println();
-                    }
+                    goodsChoiceMethod(sc, goodsMap, goodsChoice);
+                    break;
+                default:
+                    System.out.println("잘못된 입력입니다. 처음으로 돌아갑니다");
+                    System.out.println();
             }
+        }
+    }
+
+    // 장바구니 추가
+    public static void goodsChoiceMethod(Scanner sc, Map<Integer, Goods> goodsMap, int goodsChoice) {
+        int orderChoice;
+        if (goodsChoice >= 1 && goodsChoice <= goodsMap.size()) {
+            System.out.println(goodsMap.get(goodsChoice).getMenuName() + " \t|\t "
+                    + goodsMap.get(goodsChoice).getGoodsPrice() + " \t|\t "
+                    + goodsMap.get(goodsChoice).getMenuDescription());
+
+            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
+            System.out.println("1. 확인 \t\t 2. 취소");
+
+            orderChoice = sc.nextInt();
+            System.out.println();
+
+            orderCheckMethod(goodsMap, goodsChoice, orderChoice);
+        } else {
+            System.out.println("잘못된 입력입니다. 처음으로 돌아갑니다");
+            System.out.println();
+        }
+    }
+
+    // 장바구니 추가 확인
+    public static void orderCheckMethod(Map<Integer, Goods> goodsMap, int goodsChoice, int orderChoice) {
+        switch (orderChoice) {
+            case 1:
+                System.out.println(goodsMap.get(goodsChoice).getMenuName() + "이(가) 장바구니에 추가되었습니다.");
+                System.out.println();
+                break;
+            case 2:
+                System.out.println("취소되었습니다. 처음으로 돌아갑니다.");
+                System.out.println();
+                break;
+            default:
+                System.out.println("잘못된 입력입니다. 처음으로 돌아갑니다");
+                System.out.println();
         }
     }
 }
