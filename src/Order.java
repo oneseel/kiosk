@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Order {
     private ArrayList<MenuItems> cart = new ArrayList<>(); // 장바구니 목록
     private int totalSales = 0; // 총 판매금액
-    private ArrayList<MenuItems> soldItems = new ArrayList<>(); // 판매된 상품맵
+    private ArrayList<MenuItems> soldItems = new ArrayList<>(); // 판매된 상품 목록
 
     // 메서드
     // 장바구니에 물품을 추가하는 메서드
@@ -25,7 +25,7 @@ public class Order {
                 menuItems.increaseSoldCount(); // 판매된 숫자 증가
             }
 
-            // 총 판매금액
+            // 총 판매금액 업데이트
             totalSales += menuItems.getMenuItemCount() * menuItems.getMenuItemsPrice();
 
             // 판매된 상품 목록 업데이트
@@ -55,7 +55,7 @@ public class Order {
         }
     }
 
-    // 장바구니에 있는 물품의 가격을 더하는 메서드
+    // 장바구니에 있는 물품의 가격을 합산하는 메서드
     public int totalOrder() {
         int sum = 0;
         for (MenuItems item : cart) {

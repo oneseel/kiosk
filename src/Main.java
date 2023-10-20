@@ -266,7 +266,6 @@ public class Main {
                     System.out.println("현재까지 총 판매된 금액은 " + sales + "원 입니다.");
                     System.out.println();
                     System.out.println("1. 돌아가기");
-                    int saleChoice = sc.nextInt();
                     break;
 
                 default:
